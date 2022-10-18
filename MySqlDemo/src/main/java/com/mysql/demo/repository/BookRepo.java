@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.mysql.demo.Model.Book;
 
-public interface BookRepo extends JpaRepository<Book, Long>{
+public interface BookRepo extends JpaRepository<Book, Long> {
 	public List<Book> findByBookName(String name);
 }
